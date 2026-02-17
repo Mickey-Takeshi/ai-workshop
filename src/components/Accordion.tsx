@@ -25,21 +25,23 @@ export default function Accordion({ items }: { items: AccordionItem[] }) {
             className="w-full flex items-center gap-3 py-4 px-2 bg-transparent border-none text-text text-sm cursor-pointer text-left hover:text-accent transition-colors"
             onClick={() => toggle(i)}
           >
-            <span
-              className={`inline-flex items-center justify-center px-2.5 py-0.5 rounded text-[0.7rem] font-bold text-bg shrink-0 ${
-                item.badgeClass === "maint"
-                  ? "bg-gradient-to-br from-[#38bdf8] to-[#7dd3fc]"
-                  : item.badgeClass === "growth"
-                  ? "bg-gradient-to-br from-accent to-[#38bdf8]"
-                  : "bg-gradient-to-br from-accent to-[#5eead4]"
-              }`}
-            >
-              {item.badge}
-            </span>
-            <strong className="font-bold min-w-[140px] max-md:min-w-0">
+            {item.badge && (
+              <span
+                className={`inline-flex items-center justify-center px-2.5 py-0.5 rounded text-[0.7rem] font-bold text-bg shrink-0 ${
+                  item.badgeClass === "maint"
+                    ? "bg-gradient-to-br from-[#38bdf8] to-[#7dd3fc]"
+                    : item.badgeClass === "growth"
+                    ? "bg-gradient-to-br from-accent to-[#38bdf8]"
+                    : "bg-gradient-to-br from-accent to-[#5eead4]"
+                }`}
+              >
+                {item.badge}
+              </span>
+            )}
+            <strong className={`font-bold ${item.badge ? "min-w-[140px] max-md:min-w-0" : ""}`}>
               {item.title}
             </strong>
-            <span className="text-text-muted text-xs">{item.desc}</span>
+            {item.desc && <span className="text-text-muted text-xs">{item.desc}</span>}
             <span
               className={`ml-auto text-[0.7rem] text-text-dim shrink-0 transition-transform ${
                 openIndex === i ? "rotate-180" : ""
