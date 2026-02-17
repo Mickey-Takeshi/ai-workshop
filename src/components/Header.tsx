@@ -36,9 +36,9 @@ export default function Header() {
           </li>
         </ul>
 
-        <a href="#cta" className="hidden md:inline-flex items-center justify-center px-6 py-2.5 rounded-lg bg-accent text-bg font-semibold text-sm hover:bg-accent-dark transition-all hover:-translate-y-0.5">
+        <Link href="/login" className="hidden md:inline-flex items-center justify-center px-6 py-2.5 rounded-lg bg-accent text-bg font-semibold text-sm hover:bg-accent-dark transition-all hover:-translate-y-0.5">
           ログイン
-        </a>
+        </Link>
 
         <button
           className="md:hidden flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1"
