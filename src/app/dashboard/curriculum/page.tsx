@@ -11,7 +11,7 @@ const tabs: { id: FilterTab; label: string }[] = [
   { id: "all", label: "すべて" },
   { id: "core", label: "Core (PART 1-9)" },
   { id: "maintenance", label: "Maintenance (PART 10-16)" },
-  { id: "growth", label: "Growth (PART 17-29)" },
+  { id: "growth", label: "Growth (PART 17-30)" },
 ];
 
 export default function CurriculumPage() {
@@ -28,7 +28,7 @@ export default function CurriculumPage() {
       <div className="mb-8">
         <h1 className="text-2xl font-extrabold mb-1">カリキュラム</h1>
         <p className="text-text-muted text-sm">
-          3セクション・29パート・85フェーズ
+          3セクション・30パート・89フェーズ
         </p>
       </div>
 

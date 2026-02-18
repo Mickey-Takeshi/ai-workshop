@@ -21,32 +21,41 @@ export const curriculum: CurriculumSection[] = [
     totalPhases: 26,
     estimatedHours: "15〜25",
     parts: [
-      { id: 1, title: "Foundation", subtitle: "スターター構築と本番公開", section: "core", phases: [
-        p(1,1,"プロジェクト初期設定・Claude Code環境構築",45,"completed"), p(1,2,"Next.js + Supabase スターター構築",30,"completed"), p(1,3,"Vercel本番デプロイ",30,"completed"),
+      // PART 1: Foundation - Phase 0-2
+      { id: 1, title: "Foundation", subtitle: "スターター、タスク機能、設定ページ", section: "core", phases: [
+        p(1,0,"スターター構築 + 本番公開",60,"completed"), p(1,1,"タスク機能",45,"completed"), p(1,2,"設定ページ",30,"completed"),
       ]},
-      { id: 2, title: "Database", subtitle: "Supabaseでのスキーマ設計", section: "core", phases: [
-        p(2,1,"Supabaseプロジェクト設定・テーブル設計",60,"completed"), p(2,2,"RLS（Row Level Security）ポリシー設計",45,"completed"), p(2,3,"リレーション・インデックス最適化",30,"completed"),
+      // PART 2: Database - Phase 3-5
+      { id: 2, title: "Database", subtitle: "Supabase、Auth、ワークスペース", section: "core", phases: [
+        p(2,3,"Supabase セットアップ",45,"completed"), p(2,4,"Supabase Auth",60,"completed"), p(2,5,"ワークスペース + ロール",60,"completed"),
       ]},
-      { id: 3, title: "CRM", subtitle: "顧客管理機能の実装", section: "core", phases: [
-        p(3,1,"顧客一覧・検索画面",60,"completed"), p(3,2,"フィルター・ソート機能",45,"completed"), p(3,3,"顧客詳細・ステータス管理",45,"completed"),
+      // PART 3: CRM - Phase 6-8
+      { id: 3, title: "CRM", subtitle: "リード、クライアント、アプローチ", section: "core", phases: [
+        p(3,6,"リード管理",60,"completed"), p(3,7,"クライアント管理",45,"completed"), p(3,8,"アプローチ履歴",45,"completed"),
       ]},
-      { id: 4, title: "3-Layer", subtitle: "OKR → ActionMap → Task の設計", section: "core", phases: [
-        p(4,1,"OKR設計と実装",60,"completed"), p(4,2,"ActionMap → Task連携",45,"completed"), p(4,3,"カンバンボード・ドラッグ&ドロップ",60,"completed"),
+      // PART 4: 3-Layer - Phase 9-11
+      { id: 4, title: "3-Layer", subtitle: "Task 4象限、Action Map、OKR", section: "core", phases: [
+        p(4,9,"Task 4象限",60,"completed"), p(4,10,"Action Map",90,"completed"), p(4,11,"OKR",60,"completed"),
       ]},
-      { id: 5, title: "Google", subtitle: "Calendar・Tasksとの統合", section: "core", phases: [
-        p(5,1,"Google OAuth認証フロー",60,"completed"), p(5,2,"Google Calendar API連携",45,"in_progress"), p(5,3,"Google Tasks同期",45,"available"),
+      // PART 5: Google - Phase 12-14
+      { id: 5, title: "Google", subtitle: "OAuth拡張、Calendar、Tasks", section: "core", phases: [
+        p(5,12,"Google Calendar/Tasks 連携",90,"completed"), p(5,13,"Calendar 同期",60,"in_progress"), p(5,14,"Tasks 同期",60,"available"),
       ]},
-      { id: 6, title: "Business", subtitle: "ブランド・戦略ツール", section: "core", phases: [
-        p(6,1,"ブランドプロフィール管理",60,"available"), p(6,2,"競合分析ツール",45,"locked"), p(6,3,"戦略マップ作成",45,"locked"),
+      // PART 6: Business - Phase 15-17
+      { id: 6, title: "Business", subtitle: "Brand、Lean Canvas、MVV", section: "core", phases: [
+        p(6,15,"Brand Strategy",45,"available"), p(6,16,"Lean Canvas",45,"locked"), p(6,17,"MVV",30,"locked"),
       ]},
-      { id: 7, title: "Admin", subtitle: "管理機能・権限設計", section: "core", phases: [
-        p(7,1,"管理者ダッシュボード",60,"locked"), p(7,2,"ユーザー管理・ロール制御",45,"locked"),
+      // PART 7: Admin - Phase 18-19
+      { id: 7, title: "Admin", subtitle: "Workspace Admin、Super Admin", section: "core", phases: [
+        p(7,18,"Workspace Admin",45,"locked"), p(7,19,"Super Admin (SA)",60,"locked"),
       ]},
-      { id: 8, title: "Non-Func", subtitle: "セキュリティ・テスト・監視", section: "core", phases: [
-        p(8,1,"セキュリティ対策・脆弱性チェック",45,"locked"), p(8,2,"ユニットテスト・E2Eテスト",60,"locked"), p(8,3,"エラーモニタリング・ログ監視",30,"locked"),
+      // PART 8: Non-Func - Phase 20-22
+      { id: 8, title: "Non-Func", subtitle: "セキュリティ、テスト戦略、デプロイ", section: "core", phases: [
+        p(8,20,"セキュリティ",60,"locked"), p(8,21,"テスト戦略 + ログ監視",90,"locked"), p(8,22,"デプロイ + パフォーマンス",45,"locked"),
       ]},
-      { id: 9, title: "PWA & LP", subtitle: "PWA化とランディングページ", section: "core", phases: [
-        p(9,1,"Service Worker設定・PWA化",45,"locked"), p(9,2,"ランディングページ構築",60,"locked"), p(9,3,"SEO・OGP最適化",30,"locked"),
+      // PART 9: PWA & LP - Phase 23-25
+      { id: 9, title: "PWA & LP", subtitle: "PWA設定、ランディングページ、卒業のお祝い", section: "core", phases: [
+        p(9,23,"PWA設定",60,"locked"), p(9,24,"ランディングページ作成",90,"locked"), p(9,25,"UI改善 & 卒業のお祝い",90,"locked"),
       ]},
     ],
   },
@@ -58,26 +67,33 @@ export const curriculum: CurriculumSection[] = [
     totalPhases: 21,
     estimatedHours: "10〜20",
     parts: [
-      { id: 10, title: "Operations", subtitle: "バージョン管理・DBメンテナンス・障害対応", section: "maintenance", phases: [
-        p(10,1,"Git運用フロー・ブランチ管理",45,"locked"), p(10,2,"DBマイグレーション・バックアップ",60,"locked"), p(10,3,"インシデント対応・障害復旧",45,"locked"),
+      // PART 10: Operations - Phase 26-28
+      { id: 10, title: "Operations", subtitle: "運用・監視（バージョン管理、DB、ログ）", section: "maintenance", phases: [
+        p(10,26,"バージョン管理",60,"locked"), p(10,27,"DBメンテナンス",45,"locked"), p(10,28,"監視・障害対応",45,"locked"),
       ]},
-      { id: 11, title: "DevEnv", subtitle: "テスト環境・マルチアカウント・CI/CD", section: "maintenance", phases: [
-        p(11,1,"ステージング環境構築",60,"locked"), p(11,2,"GitHub Actions CI/CDパイプライン",60,"locked"), p(11,3,"マルチアカウント・自動テスト",45,"locked"),
+      // PART 11: DevEnv - Phase 29-31
+      { id: 11, title: "DevEnv", subtitle: "開発環境（テスト環境、Claude MAX、CI/CD）", section: "maintenance", phases: [
+        p(11,29,"テスト環境構築 & 認証トラブルシューティング",90,"locked"), p(11,30,"Claude MAX マルチアカウント運用",30,"locked"), p(11,31,"CI/CD・GitHub Actions",90,"locked"),
       ]},
-      { id: 12, title: "Architecture", subtitle: "UX改善・コマンドパターン・状態管理", section: "maintenance", phases: [
-        p(12,1,"UX改善・ユーザビリティ向上",60,"locked"), p(12,2,"コマンドパターン・デザインパターン適用",45,"locked"), p(12,3,"グローバル状態管理の最適化",45,"locked"),
+      // PART 12: Architecture - Phase 32-34
+      { id: 12, title: "Architecture", subtitle: "アーキテクチャ（UX設計、コマンドパターン、状態管理）", section: "maintenance", phases: [
+        p(12,32,"UX & アーキテクチャ改善",60,"locked"), p(12,33,"コマンドパターンによるデータ保存",90,"locked"), p(12,34,"状態管理パターン",90,"locked"),
       ]},
-      { id: 13, title: "Performance", subtitle: "クエリ最適化・フロントエンド・キャッシュ", section: "maintenance", phases: [
-        p(13,1,"Supabaseクエリ最適化",60,"locked"), p(13,2,"Reactレンダリング最適化",45,"locked"), p(13,3,"キャッシュ戦略・CDN活用",45,"locked"),
+      // PART 13: Performance - Phase 35-37
+      { id: 13, title: "Performance", subtitle: "パフォーマンス（クエリ、FE、キャッシュ・楽観的UI）", section: "maintenance", phases: [
+        p(13,35,"クエリ最適化",90,"locked"), p(13,36,"フロントエンドパフォーマンス",90,"locked"), p(13,37,"キャッシュ戦略・楽観的UI",90,"locked"),
       ]},
-      { id: 14, title: "Code Quality", subtitle: "ファイル整理・デバッグ・レビュー", section: "maintenance", phases: [
-        p(14,1,"ESLint/Prettier設定・コード規約",30,"locked"), p(14,2,"コードレビュープロセス構築",45,"locked"), p(14,3,"技術的負債の解消・リファクタリング",45,"locked"),
+      // PART 14: Code Quality - Phase 38-40
+      { id: 14, title: "Code Quality", subtitle: "コード品質（整理、デバッグ、レビュー）", section: "maintenance", phases: [
+        p(14,38,"重複ファイル・孤立ファイル整理",45,"locked"), p(14,39,"デバッグ手法と HAR ファイル分析",60,"locked"), p(14,40,"コードレビュー・リファクタリング",90,"locked"),
       ]},
-      { id: 15, title: "Security", subtitle: "脆弱性対応・バックアップ・認証深掘り", section: "maintenance", phases: [
-        p(15,1,"OWASP Top10対策",60,"locked"), p(15,2,"バックアップ・リストア戦略",45,"locked"), p(15,3,"Supabase RLS・認証の深掘り",45,"locked"),
+      // PART 15: Security - Phase 41-43
+      { id: 15, title: "Security", subtitle: "セキュリティ（脆弱性対応、バックアップ、認証・認可）", section: "maintenance", phases: [
+        p(15,41,"セキュリティ監視と脆弱性対応",45,"locked"), p(15,42,"バックアップと災害復旧（3層）",45,"locked"), p(15,43,"認証・認可の深掘り",90,"locked"),
       ]},
-      { id: 16, title: "Documentation", subtitle: "ランブック・移行ガイド・運用ドキュメント", section: "maintenance", phases: [
-        p(16,1,"運用ランブック作成",45,"locked"), p(16,2,"APIドキュメント整備",45,"locked"), p(16,3,"移行手順書・README",30,"locked"),
+      // PART 16: Documentation - Phase 44-46
+      { id: 16, title: "Documentation", subtitle: "ドキュメント（ランブック、FW移行、運用ドキュメント）", section: "maintenance", phases: [
+        p(16,44,"ドキュメント更新・ランブック作成",60,"locked"), p(16,45,"Next.js 16 移行ガイド",60,"locked"), p(16,46,"運用ドキュメント",60,"locked"),
       ]},
     ],
   },
@@ -85,70 +101,87 @@ export const curriculum: CurriculumSection[] = [
     id: "growth",
     title: "Growth",
     titleJa: "事業成長",
-    partRange: "PART 17-29",
-    totalPhases: 39,
-    estimatedHours: "20〜35",
+    partRange: "PART 17-30",
+    totalPhases: 42,
+    estimatedHours: "20〜40",
     parts: [
-      { id: 17, title: "Billing", subtitle: "課金・決済（Stripe、サブスクリプション）", section: "growth", phases: [
-        p(17,1,"料金プラン設計・Stripe導入",45,"locked"), p(17,2,"Stripe Checkout・サブスクリプション",60,"locked"), p(17,3,"Webhook処理・請求管理",45,"locked"),
+      // PART 17: Billing - Phase 47-49
+      { id: 17, title: "Billing", subtitle: "課金・決済（Stripe、サブスクリプション、請求管理）", section: "growth", phases: [
+        p(17,47,"決済基盤の設計と実装",120,"locked"), p(17,48,"価格設定とStripe商品登録",90,"locked"), p(17,49,"課金状態の管理",90,"locked"),
       ]},
-      { id: 18, title: "Google OAuth認可", subtitle: "本番環境でのGoogle OAuth認可取得", section: "growth", phases: [
-        p(18,1,"OAuth同意画面の設定",45,"locked"), p(18,2,"本番審査申請・スコープ設定",60,"locked"), p(18,3,"認可取得後のテスト・運用",45,"locked"),
+      // PART 18: Google OAuth認可 - Phase 50-52
+      { id: 18, title: "Google OAuth認可", subtitle: "本番認可取得（OAuth同意画面、利用規約、審査申請）", section: "growth", phases: [
+        p(18,50,"OAuth同意画面の設定",30,"locked"), p(18,51,"プライバシーポリシーと利用規約の作成",60,"locked"), p(18,52,"審査申請と対応",45,"locked"),
       ]},
-      { id: 19, title: "Product Strategy", subtitle: "PMF計測・価格戦略・機能優先度", section: "growth", phases: [
-        p(19,1,"PMF計測・ユーザーインタビュー",45,"locked"), p(19,2,"価格戦略・プライシング設計",60,"locked"), p(19,3,"機能優先度マトリクス",30,"locked"),
+      // PART 19: Product Strategy - Phase 53-55
+      { id: 19, title: "Product Strategy", subtitle: "プロダクト戦略（PMF計測、価格戦略、機能開発優先度）", section: "growth", phases: [
+        p(19,53,"プロダクト戦略の基礎",60,"locked"), p(19,54,"ロードマップと優先順位",60,"locked"), p(19,55,"プライシング戦略",60,"locked"),
       ]},
-      { id: 20, title: "Customer Lifecycle", subtitle: "オンボーディング・解約防止・NPS", section: "growth", phases: [
-        p(20,1,"オンボーディングフロー構築",60,"locked"), p(20,2,"チャーン分析・解約防止施策",45,"locked"), p(20,3,"NPS調査・カスタマーサクセス",30,"locked"),
+      // PART 20: Customer Lifecycle - Phase 56-58
+      { id: 20, title: "Customer Lifecycle", subtitle: "顧客ライフサイクル（オンボーディング、解約防止、NPS）", section: "growth", phases: [
+        p(20,56,"オンボーディング設計",90,"locked"), p(20,57,"リテンション施策",90,"locked"), p(20,58,"チャーン防止",90,"locked"),
       ]},
-      { id: 21, title: "Analytics", subtitle: "イベントトラッキング・ファネル・コホート", section: "growth", phases: [
-        p(21,1,"イベントトラッキング設計",60,"locked"), p(21,2,"ファネル分析ダッシュボード",45,"locked"), p(21,3,"コホート分析・KPIモニタリング",45,"locked"),
+      // PART 21: Analytics - Phase 59-61
+      { id: 21, title: "Analytics", subtitle: "分析・計測（イベントトラッキング、ファネル分析、コホート）", section: "growth", phases: [
+        p(21,59,"分析基盤の構築",90,"locked"), p(21,60,"KPIダッシュボード",90,"locked"), p(21,61,"A/Bテストと実験",90,"locked"),
       ]},
-      { id: 22, title: "AI Integration", subtitle: "Claude API・プロンプト設計・レスポンス処理", section: "growth", phases: [
-        p(22,1,"Claude API統合・初期設定",60,"locked"), p(22,2,"プロンプトエンジニアリング",45,"locked"), p(22,3,"ストリーミングレスポンス処理",45,"locked"),
+      // PART 22: AI Integration - Phase 62-64
+      { id: 22, title: "AI Integration", subtitle: "AI統合（Claude API、プロンプト設計、レスポンス処理）", section: "growth", phases: [
+        p(22,62,"AI機能の設計",90,"locked"), p(22,63,"AI機能の実装",120,"locked"), p(22,64,"AIのUXとガードレール",90,"locked"),
       ]},
-      { id: 23, title: "AI Ops", subtitle: "コスト管理・品質モニタリング・ガードレール", section: "growth", phases: [
-        p(23,1,"APIコスト最適化・レート制限",45,"locked"), p(23,2,"品質モニタリング・ログ分析",45,"locked"), p(23,3,"安全性ガードレール・フォールバック",45,"locked"),
+      // PART 23: AI Ops - Phase 65-67
+      { id: 23, title: "AI Ops", subtitle: "AI運用・監視（コスト管理、品質モニタリング、ガードレール）", section: "growth", phases: [
+        p(23,65,"AI監視とコスト管理",90,"locked"), p(23,66,"AI品質管理",90,"locked"), p(23,67,"AI障害対応",90,"locked"),
       ]},
-      { id: 24, title: "Scaling", subtitle: "負荷対策・マルチリージョン・キャパシティ", section: "growth", phases: [
-        p(24,1,"負荷テスト・パフォーマンス計測",60,"locked"), p(24,2,"マルチリージョンデプロイ",45,"locked"), p(24,3,"キャパシティプランニング",45,"locked"),
+      // PART 24: Scaling - Phase 68-70
+      { id: 24, title: "Scaling", subtitle: "スケーリング（負荷対策、マルチリージョン、キャパシティ）", section: "growth", phases: [
+        p(24,68,"データベーススケーリング",90,"locked"), p(24,69,"アプリケーションスケーリング",90,"locked"), p(24,70,"負荷テストと監視",90,"locked"),
       ]},
-      { id: 25, title: "Team", subtitle: "ブランチ戦略・コードオーナー・知識共有", section: "growth", phases: [
-        p(25,1,"ブランチ戦略設計（Git Flow/Trunk Based）",45,"locked"), p(25,2,"コードオーナー制度・PRプロセス",30,"locked"), p(25,3,"技術共有会・ナレッジベース構築",30,"locked"),
+      // PART 25: Team - Phase 71-73
+      { id: 25, title: "Team", subtitle: "チーム開発（ブランチ戦略、コードオーナー、知識共有）", section: "growth", phases: [
+        p(25,71,"開発プロセスの標準化",90,"locked"), p(25,72,"チームコラボレーション",90,"locked"), p(25,73,"オンボーディングと知識共有",90,"locked"),
       ]},
-      { id: 26, title: "Founder OS", subtitle: "経営ダッシュボード・プロセス・時間管理", section: "growth", phases: [
-        p(26,1,"MRRダッシュボード・経営KPI",60,"locked"), p(26,2,"業務プロセス自動化",45,"locked"), p(26,3,"時間管理・創業者ワークフロー",30,"locked"),
+      // PART 26: Founder OS - Phase 74-76
+      { id: 26, title: "Founder OS", subtitle: "創業者の仕組み化（経営ダッシュボード、プロセス、時間管理）", section: "growth", phases: [
+        p(26,74,"経営ダッシュボード",90,"locked"), p(26,75,"プロセスの仕組み化",90,"locked"), p(26,76,"創業者の時間管理",90,"locked"),
       ]},
-      { id: 27, title: "Compliance", subtitle: "利用規約・GDPR・監査ログ", section: "growth", phases: [
-        p(27,1,"利用規約・プライバシーポリシー実装",45,"locked"), p(27,2,"GDPR対応・個人情報管理",45,"locked"), p(27,3,"監査ログ・データエクスポート",30,"locked"),
+      // PART 27: Compliance - Phase 77-79
+      { id: 27, title: "Compliance", subtitle: "法令遵守（利用規約、GDPR、監査ログ）", section: "growth", phases: [
+        p(27,77,"利用規約・プライバシーポリシー",90,"locked"), p(27,78,"GDPR / 個人情報保護法対応",90,"locked"), p(27,79,"監査ログ・コンプライアンスレポート",90,"locked"),
       ]},
-      { id: 28, title: "i18n", subtitle: "多言語対応・ローカライズ", section: "growth", phases: [
-        p(28,1,"多言語フレームワーク導入（next-intl）",60,"locked"), p(28,2,"翻訳ワークフロー・ロケール管理",45,"locked"), p(28,3,"RTL対応・地域別最適化",30,"locked"),
+      // PART 28: i18n - Phase 80-82
+      { id: 28, title: "i18n", subtitle: "国際化（多言語対応、ローカライズ）", section: "growth", phases: [
+        p(28,80,"国際化基盤（next-intl設定）",90,"locked"), p(28,81,"翻訳ワークフロー",90,"locked"), p(28,82,"ローカライズ（通貨・日付・文化）",90,"locked"),
       ]},
-      { id: 29, title: "Mobile", subtitle: "React Native・プッシュ通知・オフライン対応", section: "growth", phases: [
-        p(29,1,"React Nativeセットアップ・UI構築",60,"locked"), p(29,2,"プッシュ通知・ディープリンク",45,"locked"), p(29,3,"オフライン対応・アプリストア申請",45,"locked"),
+      // PART 29: Mobile - Phase 83-85
+      { id: 29, title: "Mobile", subtitle: "モバイル対応（React Native、プッシュ通知）", section: "growth", phases: [
+        p(29,83,"React Native / Expo 基盤",90,"locked"), p(29,84,"モバイル最適化UI",90,"locked"), p(29,85,"プッシュ通知・オフライン対応",90,"locked"),
+      ]},
+      // PART 30: React Performance - Phase 86-88
+      { id: 30, title: "React Performance", subtitle: "Reactパフォーマンス最適化（非同期並列化、バンドルサイズ、再レンダリング）", section: "growth", phases: [
+        p(30,86,"非同期ウォーターフォール排除",45,"locked"), p(30,87,"バンドルサイズ最適化",45,"locked"), p(30,88,"再レンダリング最適化",45,"locked"),
       ]},
     ],
   },
 ];
 
 export const mockProgress: UserProgress = {
-  completedPhases: 15,
-  totalPhases: 86,
+  completedPhases: 13,
+  totalPhases: 89,
   currentPart: 5,
-  currentPhase: "p5-2",
+  currentPhase: "p5-13",
   streakDays: 7,
   totalStudyHours: 23.5,
   sectionProgress: {
-    core: { completed: 14, total: 26 },
+    core: { completed: 13, total: 26 },
     maintenance: { completed: 0, total: 21 },
-    growth: { completed: 0, total: 39 },
+    growth: { completed: 0, total: 42 },
   },
   recentActivity: [
-    { id: "a1", type: "phase_completed", title: "Google OAuth認証フロー完了", timestamp: "2026-02-17T10:30:00Z", partId: 5 },
+    { id: "a1", type: "phase_completed", title: "Google Calendar/Tasks 連携完了", timestamp: "2026-02-17T10:30:00Z", partId: 5 },
     { id: "a2", type: "part_started", title: "PART 5: Google を開始", timestamp: "2026-02-16T14:00:00Z", partId: 5 },
-    { id: "a3", type: "phase_completed", title: "カンバンボード・ドラッグ&ドロップ完了", timestamp: "2026-02-15T16:45:00Z", partId: 4 },
+    { id: "a3", type: "phase_completed", title: "OKR 完了", timestamp: "2026-02-15T16:45:00Z", partId: 4 },
     { id: "a4", type: "streak", title: "7日連続ログイン達成!", timestamp: "2026-02-14T00:00:00Z", partId: 0 },
-    { id: "a5", type: "phase_completed", title: "ActionMap → Task連携完了", timestamp: "2026-02-13T11:20:00Z", partId: 4 },
+    { id: "a5", type: "phase_completed", title: "Action Map 完了", timestamp: "2026-02-13T11:20:00Z", partId: 4 },
   ],
 };
